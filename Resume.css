@@ -1,0 +1,19 @@
+body{
+    background-color:;
+    
+}
+h1{
+    text-align: center;
+}
+.table tr  {
+    width: 100;
+}
+td:first-child {
+	width: 91%;
+    margin-left: 50px;
+}
+
+
+h3{
+    background-color: silver;
+}
