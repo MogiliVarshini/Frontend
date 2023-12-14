@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+.Header{
+    text-align: center;
+    padding: 1rem;
+	margin-bottom: 2px;
+    color: brown;
+}
+.Para_Align strong{
+    color: brown;
+}
+
+#SJIMage{
+    
+    margin-left: 520px;
+    width: 300px;
+}
+a{
+    text-decoration:none;
+}
+p{
+    margin-left: 80px;
+    margin-right: 80px;
+   
+}
+.Button_space{
+    margin-left: 400px;
+}
+
+.butns{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.butns button{
+    height: 30px;
+    width: 160px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 5px;
+    border: 2px solid rgb(224, 51, 51);
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0 2px;
+    cursor: pointer;
+    outline: none;
+    background-color: brown;
+    color: white;
+    margin-left:5px;
+}
+.butns button a {
+    color: white;
+}
+
+.Iphone_img{
+    float: right;
+    margin-right: 75px;
+}
+.Div_margin{
+    margin-left: 80px;
+    margin-right: 70px;
+}
+.Div_margin h2{
+    color: brown;
+}
+#Chatbot_Image{
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin-right: 30px;
+    position: fixed;
+   
+}
+.Form_align{
+    border: 2px solid brown;
+    margin: 0 80px;
+    background-color: brown;
+    color: white;
+}
+.Submit_Button{
+    height: 30px;
+    width: 160px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 5px;
+    border: 2px solid rgb(224, 51, 51);
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0 2px;
+    cursor: pointer;
+    outline: none;
+    background-color:white;
+    color: brown;
+    margin-left:5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.Submit_Button :hover{
+    background-color: brown;
+    color: white;
+}
+
+.Set_sugg{
+    margin-top: 0px;
+}
