@@ -2,33 +2,88 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+  } 
+
+  .box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000ff;
+    transition:
+      width 2s,
+      height 2s,
+      background-color 2s,
+      slider-vertical 2s;
   }
   
+  .box:hover {
+    background-color: #ffcccc;
+    width: 200px;
+    height: 200px;
+    
+  }
+
+
 .Header{
     text-align: center;
     padding: 1rem;
 	margin-bottom: 2px;
-    color: brown;
+    color:white;
+    background-color: brown;
+    border-radius: 15px;
+    margin: 50px;
+    margin-top: 5px;
+    position: fixed;
+    width: 1420px;   
 }
-.Para_Align strong{
-    color: brown;
+
+.Para_Align{
+    background-color:brown;
+    color:white;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0 0px;
+    margin-top: 0px;
+    box-shadow: 1px 2px 0px 4px rgb(254, 137, 137);
 }
 
 #SJIMage{
     
-    margin-left: 520px;
+    margin-left: 610px;
     width: 300px;
+    margin-top: 150px;
+   
 }
 a{
     text-decoration:none;
+    color: white;
 }
 p{
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
    
 }
+.Para_Alignment{
+    background-color: brown;
+    color:white;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0 0px;
+    margin-top: 0px;
+    padding: 40px;
+    box-shadow: 1px 2px 0px 4px rgb(254, 137, 137);
+  
+}
 .Button_space{
-    margin-left: 400px;
+    margin-left: 480px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
 }
 
 .butns{
@@ -51,6 +106,16 @@ p{
     color: white;
     margin-left:5px;
 }
+.butns button :first-child:hover
+{
+    background-color: white;
+    color: brown;
+}
+.butns button :last-child:hover{
+    background-color: white;
+    color: brown; 
+}
+
 .butns button a {
     color: white;
 }
@@ -60,43 +125,60 @@ p{
     margin-right: 75px;
 }
 .Div_margin{
-    margin-left: 80px;
+    margin-left: 70px;
     margin-right: 70px;
-}
-.Div_margin h2{
     color: brown;
+    margin-top: 20px;
 }
+
 #Chatbot_Image{
     height: 50px;
     width: 50px;
     float: right;
     margin-right: 30px;
+    margin-top: 10px;
     
    
 }
+.Form_align h2{
+    text-align: center;
+    
+}
 .Form_align{
     border: 2px solid brown;
-    margin: 0 80px;
+    margin: 0 50px;
     background-color: brown;
     color: white;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 1420px;
+    box-shadow: 1px 2px 0px 4px rgb(254, 137, 137);
+    margin-bottom: 50px; 
+    display: flex;
+    flex-direction: column; 
+}
+.Form_align .Email_set{
+    text-align: jsutify;
+    width: 500px;
+}
+.Form_align .Set_sugg{
+    text-align: jsutify;
+    width: 500px;
 }
 .Submit_Button{
     height: 30px;
     width: 160px;
     border-radius: 10px;
-    border: none;
     margin: 0 5px;
     border: 2px solid rgb(224, 51, 51);
-    font-size: 12px;
-    font-weight: 300;
-    padding: 0 2px;
+    font-size: 15px;
+    font-weight: 1000;
     cursor: pointer;
-    outline: none;
     background-color:white;
     color: brown;
-    margin-left:5px;
-    margin-top: 10px;
     transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-left: 620px;
 }
 .Submit_Button :hover{
     background-color: brown;
@@ -106,3 +188,37 @@ p{
 .Set_sugg{
     margin-top: 0px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.chatbot-toggler {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgb(250, 158, 158);
+  transition: all 0.2s ease;
+}
+.chatbot-toggler span {
+    color:brown;
+    position: absolute;
+  }
+  
+  
+ 
+  
+  
+
