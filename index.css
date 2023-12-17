@@ -17,11 +17,13 @@ body {
     padding: 10px 10px;
     transition: all 3s ease;
     cursor: pointer;
-    box-shadow: 10px 10px rgb(74, 45, 236);
+    box-shadow: rgb(3, 91, 168) -5px -5px 6px 0px inset;
+    
     
 }
 .Project_Styling :hover{
-    transform: scale(5s);
+    transform: scale(5s) ;
+    -o-transition-duration: infinite;
 }
 .Project_Styling h1{
     text-align: center;
@@ -35,4 +37,7 @@ body {
 }
 a{
     text-decoration: none;
+}
+.Project_Styling ul li {
+    list-style: square ;
 }
