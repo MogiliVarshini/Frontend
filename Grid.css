@@ -81,7 +81,7 @@
 .child6{
    
     grid-column-start: 3;
-    grid-column-end:5 ;
+    grid-column-end:5;
     grid-row-start:8 ;
     grid-row-end:12 ;
     height:200px ;
@@ -96,5 +96,6 @@
     grid-row-end: 12;
     height:200px ;
     margin-top: 0px;
+    margin-right: 30px;
     
 }

@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: Quicksand;
+    background-image: url(https://img.freepik.com/free-photo/3d-render-low-poly-plexus-design-network-communications_1048-14542.jpg?size=626&ext=jpg&ga=GA1.1.1875182705.1702804185&semt=ais);
+    background-size: cover;
+}
+.Form_Container{
+    background-color: #ebf6fc;
+    width: 70%;
+    height: 100%;
+    margin-left: 220px;
+    padding: 20px 150px;
+    border: black;
+}
+.Form_Container h1{
+    color: #24457b;
+    text-align: center;
+}
+.Title{
+    margin-bottom: 60px;
+
+}
+label{
+    color: #24457b;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;  
+}
+input{
+    height: 50px;
+    border-radius: 5px;
+}
+.Input_Style{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Radio_Style{
+    margin-top: 15px;
+    border: 0px;
+    width: 2%;
+    height: 1.3em;
+    margin-bottom: 20px;
+}
+.Radio_opac{
+    opacity: 0.5;
+}
+.Label_Text{
+    opacity: 0.5px;
+}
+.Checklist_Style{
+    display: block;
+    margin-bottom: -10px;
+}
+.Para_style{
+    opacity: 0.5;
+}
+.Box_Style{
+    
+    width: 2%;
+    height: 1.5em;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 30px;
+    color: #5a7db5;
+}
+button{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 15px;
+    color:white;
+    font-size: 22px;
+    font-weight: 500;
+    background-color:#24457b;
+    padding-top: 10px; 
+    margin-left: 150px;
+}
