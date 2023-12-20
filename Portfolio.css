@@ -135,7 +135,7 @@ a{
 
 #About_me{
     display: inline;
-    
+    height: 100%;
     
 }
 .Hi_image{
@@ -175,14 +175,14 @@ a{
 }
 
 #skills{
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 50px;
     padding-left: 70px;
     border: 1px solid black;
        
 }
 #skills h2{
-    text-align: center;
+    
     color: blueviolet;
     margin-bottom: 100px;
     
@@ -203,9 +203,13 @@ a{
     box-shadow: 0px 0px 15px 1px black;
     width: 70%;
     height: 80%;
-    padding: 0px -150px;
+    
     display: flex;
     align-items: center;
+    transition: all 0.5 ease;
+}
+.Skill_Container:hover{
+    transform: scale(1.05);
 }
 .skill_Settings{
     background-color: white;
@@ -224,7 +228,7 @@ a{
     width: 150px;
     height: 200px;
     margin-left: 70px;
-    border-radius: 50%;
+   border-radius: 50%;
     color: blueviolet;
     background: white linear-gradient(to right,transparent 50%,blueviolet 0);
 }
