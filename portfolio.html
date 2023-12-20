@@ -12,9 +12,9 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-JeFGvKbXtmpLxWuSyDAEqhR9uQ8ZslvCpw&usqp=CAU" alt="">
         </div>
         <div class="navbar_right">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About_me">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="">Projects</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Contact</a></li>
@@ -22,21 +22,25 @@
                
     </div>
     <main>
-        <div class="img_right">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3dgZfazyd_GQSjZ_HCmAKuP8G_WOhLd6Rog&usqp=CAU" alt="Image1">
-            <blackquote><p><strong>HELLO! THIS IS VARSHINI</strong>
-                <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error animi velit consequatur fugit eligendi non excepturi nulla, et earum, eveniet suscipit, optio distinctio? Minus expedita exercitationem, rem voluptas voluptatem animi a, praesentium illo magnam corporis repellendus eum dolorem delectus. Quis blanditiis, asperiores ex ea doloremque quasi aperiam non explicabo maiores.
-            </p><br><br><br>
-            <button>Hire Me</button>
-            <button>Get CV</button>
-        </blackquote>
-        </div>
-        <div class="About_me">
+        <section id="home">
+            <div class="Home_left">
+              <h2>HELLO! <br> I AM <span class="Name">VARSHINI</span></h2>
+              <p class="Home_Role"><strong>WEB & PEGA DEVELOPER</strong></p>
+              <div class="buttons">
+                <button><strong>Hire me</strong></button>
+                <button><strong>Get CV</strong></button>
+              </div>
+              </div>
+              <div class="Home_right" style="z-index: 0px;">
+                  <img src="./Images/Portfolio_Image_1.jpg" alt="">
+              </div>
+          </section>
+
+        <div id="About_me">
             <div>
                 <img class="Hi_image" src="https://cdn3d.iconscout.com/3d/premium/thumb/woman-say-hi-at-work-6615680-5537775.png" alt="">
             </div>
-            <div>
+            <div class="About_me_right">
                 <p   class="p"><strong>
                     LET’S <br>
                     INTRODUCE ABOUT <br>
@@ -47,25 +51,39 @@
             </div>
             
         </div>
-        <div class="skills">
+        
+        <div id="skills">
                 <h2>My skills</h2>
-            <div class="Skill_Flex">
-                <div class="skill_Settings skill1">
-                    <h3>PEGA</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, maxime!
-                    </p>
+                <div class="Skill_Flex">
+                    <div class="Skill_Container">
+                        <div class="skill_Settings ">
+                            <h3>97<span>%</span></h3>
+                            <h4>PEGA</h4>
+                        </div>
+                    </div>
+                    <div class="Skill_Container">
+                        <div class="skill_Settings ">
+                            <h3>88<span>%</span></h3>
+                            <h4>HTML</h4>
+                        </div>
+                    </div>
+                    <div class="Skill_Container">
+                        <div class="skill_Settings ">
+                            <h3>80<span>%</span></h3>
+                            <h4>CSS</h4>
+                        </div> 
+                    </div>
+                    <div class="Skill_Container">
+                        <div class="skill_Settings ">
+                            <h3>65<span>%</span></h3>
+                            <h4>Java</h4>
+                        </div>
+                    </div>
+                                   
                 </div>
-                <div class="skill_Html skill2">
-                    <h3>HTML</h3>
-                </div>
-                <div class="skill_css skill3">
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill_Java skill4">
-                    <h3>JAVA</h3>
-                </div>                
-            </div>            
-        </div>
+        </div>            
+        
+        <!--
         <div class="skills">
             <h2>Services we offer</h2>
         <div class="Skill_Flex">
@@ -82,7 +100,7 @@
             </div>                
         </div>            
     </div>
-        
+--> 
             
         
     </main>

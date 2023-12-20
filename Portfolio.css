@@ -3,6 +3,7 @@
 }
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #efefef;
 }
 img{
     width: 50%;
@@ -41,161 +42,239 @@ a{
     font-size: 20px;
     text-decoration: none;
 }
-.img_right{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    background: blueviolet;
-    max-width: 85rem;
-    height: 50vh;
-    margin: 0px auto;
-    padding: 0px 0px 0px 1rem;
-    border-radius: 20px;      
+
+/*Home css*/
+#home
+{
+    height: 80vh;
+    width: 90vw;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
 }
-.blackquote{
-    text-align: right;
-    color: black;
-    font-size: 45px;
+.Home_left
+{
+    padding:20px 30px;
+    height:100%;   
+}
+.Home_left h2{
+    font-size: 60px;
+    margin-top: 100px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    
+}
+.Name
+{
+    color: blueviolet;
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+.Home_Role{
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    background-color: blueviolet;
+    color: white;
     padding: 10px;
-    color: white; 
+    padding-left: 30px;
+    letter-spacing: 6px;
+    transition: all 3s ease;
+}
+.Home_Role p:hover{
+    transform: scale(5);
+    transition-property: margin-right; 
+}
+.buttons
+{
+    display: flex;
+    height: 100px;
+    width: 200px;
+    gap: 20px;
 }
 button{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    width: 15%;
-    height: 25px;
-    border-radius: 30px;
+    width: 50%;
+    height: 50px;
+    border: 4px solid blueviolet;
+    border-radius: 15px;
     color:blueviolet;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     background-color:white; 
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
+    transition:all 3s ease;
+    margin-top: 100px;
+  
 }
-button :hover{
-    color:blueviolet ;
-    background-color: white;
+.buttons button:hover{
+    transform: scale(1.19);
+    color: white;
+    background-color: blueviolet;
 }
-.About_me{
+
+
+
+.Home_right
+{
+    width: 60%;
+    height: 100%;
+   
+}
+.Home_right img{
+    float: right;
+    height: 70vh;
+    width: 49vw;
+    padding-right: 150px;
+}
+a{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+#About_me{
     display: inline;
+    
+    
 }
 .Hi_image{
-    float: right;
+    float: left;
     margin-top: 0px;
-    height: 600px;
+    height: 500px;
+}
+.About_me_right{
+    margin-right: 50px;
 }
 .p{
-    
-    width: 50%;
+    margin-top: 200px;
     font-size: 35px;
-    margin-left: 50px;
-    padding-left: 70px;
-    margin-top: 100px;
 }
-.About_me_desc
-{
+
+.About_me_desc{
     color: black;
-    width: 50%;
+    opacity: 0.75;
     font-size: 16px;
-    margin-left: 50px;
-    padding-left: 70px;
     margin-top: -30px;
-    opacity: 0.75;   
-    
 }
 .Button_CV{
+    float: right;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 120px;
-    border-radius: 15px;
+    border-radius: 10px;
     height: 50px;
+    width: 25vw;
     color:white;
     font-size: 20px;
     font-weight: 500;
     background-color:blueviolet; 
     align-items: center;
-    margin-top: 30px;
-    
+    margin-top: 0px;
+    margin-right: 0vw;
 }
-.skills{
-    margin-top: 20px;
+
+#skills{
+    margin-top: 100px;
     margin-left: 50px;
     padding-left: 70px;
     border: 1px solid black;
-    
-    
+       
 }
-.skills h2{
+#skills h2{
     text-align: center;
     color: blueviolet;
-    padding-left: 500px;
+    margin-bottom: 100px;
+    
 }
+
 .Skill_Flex{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% ;
-    gap: 10px;
+    grid-template-columns: repeat(4,1fr) ;
+   height: 400px;
+   width: 100%;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: progress 1s ease-out forwards;
+}
+.Skill_Container{
+    background-color: white;
+    box-shadow: 0px 0px 15px 1px black;
+    width: 70%;
+    height: 80%;
+    padding: 0px -150px;
+    display: flex;
+    align-items: center;
 }
 .skill_Settings{
-    background-color: blueviolet;
-    color: white;
-    width: 100%;
-    height: 300px;
+    background-color: white;
+    color: black;
+    width: 90%;
+    height: 350px;
     border: 1px solid black;
     text-align: center;
+    margin-left: 0px;
+    box-shadow: 1px blueviolet;   
     
-    margin-right: 50px;
 }
-.skill1{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 5;
+
+.Skill_Flex .skill_Settings{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin-left: 70px;
+    border-radius: 50%;
+    color: blueviolet;
+    background: white linear-gradient(to right,transparent 50%,blueviolet 0);
 }
-.skill_Html{
-    background-color: blueviolet;
-    color: white;
+.Skill_Flex .skill_Settings h3{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5em;
+    z-index: 1;
+    font-weight: 500;
+}
+.Skill_Flex .skill_Settings h3 span{
+    font-size: 0.65em;
     
-    height: 300px;
-    border: 1px solid black;
-    text-align: center;
-    margin-right: 50px;
+    font-weight: 400;
 }
-.skill2{
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 5;
+.Skill_Flex .skill_Settings h4{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    font-weight: 500;
+    color: blueviolet;
+    text-transform: uppercase;
 }
-.skill_css{
-    background-color: blueviolet;
-    color: white;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black;
-    text-align: center;
-    margin-right: 50px;
+.Skill_Flex .skill_Settings::before{
+    content: '';
+    display: block;
+    height: 100;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
 }
-.skill3{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 9;
+.Skill_Flex .skill_Settings::after{
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    background-color: white;
+
 }
-.skill_Java{
-    background-color: blueviolet;
-    color: white;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black;
-    text-align: center;
-    margin-right: 50px;
+.Skill_Flex .skill_Settings::before{
+    background: var(blueviolet);
+    transform: rotate(calc(((var(97) - 50) * 0.01turn)));
 }
-.skill4{
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 9;
+.Skill_Flex .skill_Settings::after{
+    background: white;
+    transform: rotate(calc(((blueviolet) - 0) * 0.01turn));
 }
 
 
