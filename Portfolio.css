@@ -16,7 +16,11 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: sticky;
+    top: 30px;
+  
 }
+
 .navbar_right{
     padding: 20px;
     align-items: center;
@@ -52,6 +56,7 @@ a{
     display: flex;
     justify-content: space-between;
     margin-left: 100px;
+    margin-top: 100px;
 }
 .Home_left
 {
@@ -80,20 +85,19 @@ a{
     padding: 10px;
     padding-left: 30px;
     letter-spacing: 6px;
-    transition: all 3s ease;
 }
 .Home_Role p:hover{
     transform: scale(5);
     transition-property: margin-right; 
 }
-.buttons
+.butns
 {
     display: flex;
     height: 100px;
     width: 200px;
     gap: 20px;
 }
-button{
+.butns button{
     justify-content: center;
     width: 50%;
     height: 50px;
@@ -106,13 +110,20 @@ button{
     margin-bottom: 10px;
     transition:all 3s ease;
     margin-top: 100px;
-  
+    transition: all 0.3s ease;
 }
-.buttons button:hover{
-    transform: scale(1.19);
+.butns button{
+    background: linear-gradient(to right,blueviolet 50%,#fff 50%);
+    color: blueviolet;
+    background-size: 200% 100%;
+    background-position: right;
+}
+
+.butns button:hover{
+    background-position: left;
     color: white;
-    background-color: blueviolet;
 }
+
 
 
 
@@ -165,24 +176,33 @@ a{
     border-radius: 10px;
     height: 50px;
     width: 25vw;
-    color:white;
     font-size: 20px;
     font-weight: 500;
-    background-color:blueviolet; 
     align-items: center;
     margin-top: 0px;
     margin-right: 0vw;
+    transition: all 0.3s ease;
+    background: linear-gradient(to right,white 50%,blueviolet 50%);
+    color: white;
+    background-size: 200% 100%;
+    background-position: right;
+}
+
+.About_me_right .Button_CV:hover{
+    background-position: left;
+    color:blueviolet;
+    
 }
 
 #skills{
-    margin-top: 150px;
+    margin-top: 300px;
     margin-left: 50px;
     padding-left: 70px;
     border: 1px solid black;
        
 }
 #skills h2{
-    
+    text-align: center;
     color: blueviolet;
     margin-bottom: 100px;
     
@@ -200,7 +220,8 @@ a{
 }
 .Skill_Container{
     background-color: white;
-    box-shadow: 0px 0px 15px 1px black;
+    box-shadow: 0px 0px 8px 1px black;
+    border-radius: 10px;
     width: 70%;
     height: 80%;
     
@@ -281,6 +302,146 @@ a{
     transform: rotate(calc(((blueviolet) - 0) * 0.01turn));
 }
 
+.Projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.slide_container{
+    max-width: 1500px;
+    width: 100%;
+    background-color: grey;
+    padding: 40px 0px;
+}
+.slide_content{
+    margin: 0 40px;  
+  
+}
+.card_wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.card{
+    width: 100%;
+    border-radius: 25px;
+    background-color:white;
+     
+    
+}
+.image_content,
+.card_content{
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image_content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 25px 25px 0px 25px;
+}
+.overlay::before,.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color:blueviolet;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color:#fff;
+}
+.card_image{
+    position: relative;
+    height: 140px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+    
+
+}
+.card_image .card_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid blueviolet;
+
+}
+.name{
+    font-size:18px ;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color:#707070;
+    text-align: center;
+}
+.btn{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: blueviolet;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: rgb(201, 149, 249);
+}
+
+
+/*Projects css(Scrolling type)
+.Project_Container{
+    width: 1000px;
+}
+.Project_scroll{
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.Projects_scroll::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    scroll-snap-align: start;
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:nth-child(odd){
+    background:linear-gradient(-229deg,blueviolet,pink)
+}
+.card:nth-child(even){
+    background: linear-gradient(-229deg,pink,blueviolet);
+}*/
 
   
  

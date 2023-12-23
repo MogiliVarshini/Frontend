@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.Bg_netflix{
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/563192ea-ac0e-4906-a865-ba9899ffafad/6b2842d1-2339-4f08-84f6-148e9fcbe01b/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    /*background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);*/
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    
+}
+.navbar{
+    margin: 50px;
+}
+
+.navbar_right{
+    display: inline;
+}
+
+/*Home css*/
+
+.Home_netflix{
+    width: 100%;
+    color: black;
+    text-align: center;
+    margin-top:250px ;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.Home_netflix h1{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+.Home_netflix p{
+    font-size: 36px;
+}
+.Home_netflix h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5
+}
+.Home_netflix .Input{
+    line-height: 5em;
+    width: 25%;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+.Home_netflix .Hbutn{
+    line-height: 2em;
+    width: 15%;
+    font-size: 32px;
+}
+
+/*Page1 css*/
+
+.page1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 10px solid rgb(87, 85, 85);
+    border-left: none;
+    border-right: none;
+    
+}
+.page1_text{
+    width: 50%;
+    padding-left: 50px;
+    margin: 265px 0px;
+}
+.page1_text h2{
+    font-size: 4rem;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+.page1_text p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    opacity: 0.8;
+    padding-right: 250px;
+    
+}
+
+.overlay_text{
+    background-color: black;
+    border: 1px solid white;
+   width: 60%;
+   padding: 15px 15px;
+   overflow: inherit;
+   display: flex;
+   flex-direction: row;
+   gap: 40px;
+   margin-left: 120px;
+   border-radius: 15px;
+   height: 100%;
+   background-color: black;
+
+}
+.overlay_img{
+    height: 90%;
+    width: 20%;    
+}
+.page1 .arrow{
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page1 .page_para{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
