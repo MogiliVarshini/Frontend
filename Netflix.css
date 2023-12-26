@@ -3,20 +3,23 @@
 }
 body{
     font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    background-color: black;
 }
 .Bg_netflix{
     background: url('https://assets.nflxext.com/ffe/siteui/vlv3/563192ea-ac0e-4906-a865-ba9899ffafad/6b2842d1-2339-4f08-84f6-148e9fcbe01b/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg');
     /*background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);*/
+
     background-size: cover;
     width: 100%;
-    height: 100%;
-
-    
+    height: 100%;  
 }
+
 .navbar{
     margin: 50px;
 }
-
+.navbar_left h1{
+    color: rgb(229,9,20);
+}
 .navbar_right{
     display: inline;
 }
@@ -27,13 +30,13 @@ body{
     width: 100%;
     color: black;
     text-align: center;
-    margin-top:250px ;
+    margin-top:200px ;
     color: white;
-    margin-bottom: 100px;
+    
 }
 
 .Home_netflix h1{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -42,23 +45,25 @@ body{
     
 }
 .Home_netflix p{
-    font-size: 36px;
+    font-size: 28px;
 }
 .Home_netflix h3{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.5
 }
 .Home_netflix .Input{
-    line-height: 5em;
+    line-height: 3em;
     width: 25%;
     border-radius: 7px;
     margin-right: 10px;
+    background-color: #333333;
 }
 .Home_netflix .Hbutn{
-    line-height: 2em;
+    line-height: 1.2em;
     width: 15%;
-    font-size: 32px;
+    font-size: 28px;
+    background-color: rgb(229,9,20);
 }
 
 /*Page1 css*/
@@ -71,23 +76,22 @@ body{
     width: 100%;
     background-color: black;
     color: white;
-    border: 10px solid rgb(87, 85, 85);
+    border: 5px solid rgb(87, 85, 85);
     border-left: none;
     border-right: none;
-    
 }
 .page1_text{
     width: 50%;
     padding-left: 50px;
-    margin: 265px 0px;
+    margin: 200px 0px;
 }
 .page1_text h2{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     padding-bottom: 20px;
 }
 .page1_text p{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     opacity: 0.8;
     padding-right: 250px;
@@ -98,19 +102,19 @@ body{
     background-color: black;
     border: 1px solid white;
    width: 60%;
-   padding: 15px 15px;
+   padding: 10px 10px;
    overflow: inherit;
    display: flex;
    flex-direction: row;
-   gap: 40px;
+   gap: 30px;
    margin-left: 120px;
    border-radius: 15px;
-   height: 100%;
+   height: 70%;
    background-color: black;
 
 }
 .overlay_img{
-    height: 90%;
+    height: 30%;
     width: 20%;    
 }
 .page1 .arrow{
@@ -123,4 +127,149 @@ body{
     display: flex;
     justify-content: center;
     align-items: end;
+}
+
+/*faq css*/
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  a,
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+  p,
+  span {
+    font-weight: 300;
+    font-size: clamp(0.8rem, 4vw, 1.4rem);
+  }
+ 
+  
+  /* Spacing */
+  
+  .margin-bottom {
+    margin-bottom: 1rem;
+  }
+  
+  /* Text Style */
+  
+  .text-lg {
+    font-size: clamp(1.2rem, 8.8vw, 2.8rem);
+    font-weight: 600;
+  }
+  .text-md {
+    font-size: clamp(0.8rem, 5vw, 1.6rem);
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Support HTML CSS */
+  
+  .title {
+    font-size: 1.4rem;
+    color: gray;
+    margin-top: 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid gray;
+  }
+  
+  .container {
+    display: grid;
+    margin: auto;
+    place-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 0.4rem;
+    background-color:#333333;
+    color: white;
+    
+  }
+  
+  /* F.A.Q */
+  
+  .faq-accordion {
+    display: grid;
+    gap: 0.4rem;
+    max-width: 50rem;
+  }
+  .faq-input {
+    display: none;
+  }
+  .faq-label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    padding-inline: 3%;
+    background-color: var(--color-input);
+    border-bottom: 2px solid black;
+  }
+  .faq-content {
+    background-color: var(--color-input);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in, padding 0.3s ease-in;
+  }
+  .faq-content p {
+    margin: 2rem;
+  }
+  .faq-input:checked ~ .faq-content {
+    max-height: 60rem;
+    transition: max-height 0.3s ease-in;
+  }
+  .faq-input:checked ~ .faq-label i {
+    transform: rotate(45deg);
+    transition: max-height 0.3s ease-in, padding 0.3s ease-in;
+  }
+
+.bottom_netflix{
+    width: 100%;
+    color: black;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.bottom_netflix h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5
+}
+.bottom_netflix .Input{
+    line-height: 3em;
+    width: 25%;
+    border-radius: 7px;
+    margin-right: 10px;
+    background-color: #333333;
+}
+.bottom_netflix .Hbutn{
+    line-height: 1.2em;
+    width: 15%;
+    font-size: 28px;
+    background-color: rgb(229,9,20);
+}
+
+/*footer css*/
+.footer{
+    background-color: black;
+    padding: 50px 0px;
+}
+.footer a{
+    color: rgba(255,255,255,0.7);
+    
+}
+.footer_elements a{
+    color: rgba(255,255,255,0.7);
+}
+.footer_elements{
+    display: flex;
+    flex-direction:column;
+    row-gap: 10px;
+    
 }
