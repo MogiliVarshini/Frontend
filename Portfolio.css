@@ -22,27 +22,26 @@ img{
 }
 
 .navbar_right{
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     display: flex;
     flex-direction: row;
     list-style: none;
+    font-size: 2rem;
    
 }
 a{
-    padding: 15px;
+   padding: 5px;
     text-decoration: none;
     color:blueviolet;
     text-shadow: 0.8px 0px blueviolet;
     text-decoration: underline;
+    margin: 20px;
 }
 .navbar_right li a:hover{
     color: white;
-    border: 2px solid blueviolet;
     background-color:blueviolet;
-    border-radius: 20px;
-    width: 50%;
-    height: 20%;
+    border-radius: 10px;
     font-size: 20px;
     text-decoration: none;
 }
@@ -76,6 +75,19 @@ a{
     font-size: 60px;
     letter-spacing: 1px;
 }
+.Hello_Content{
+  position: relative;
+  animation-name: Hello;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+}
+@keyframes Hello {
+  0%   {right:0px; top:0px;}
+ 
+  50%  {right:60px; top:0px;} 
+  100% {right:0px; top:0px;}
+}
+
 .Home_Role{
     font-size: 20px;
     font-family: "Rubik", sans-serif;
@@ -85,7 +97,19 @@ a{
     padding: 10px;
     padding-left: 30px;
     letter-spacing: 6px;
+    position: relative;
+    animation-name: Role;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
 }
+  
+@keyframes Role {
+  0%   {background-color:blueviolet; left:0px; top:0px;}
+  50%  {background-color:blueviolet; left:60px; top:0px;}
+  
+  100% {background-color:blueviolet; left:0px; top:0px;}
+}
+
 .Home_Role p:hover{
     transform: scale(5);
     transition-property: margin-right; 
@@ -198,7 +222,7 @@ a{
     margin-top: 300px;
     margin-left: 50px;
     padding-left: 70px;
-    border: 1px solid black;
+   
        
 }
 #skills h2{
@@ -301,10 +325,43 @@ a{
     background: white;
     transform: rotate(calc(((blueviolet) - 0) * 0.01turn));
 }
+/*project css*/
+.container .project_head{
+  text-align: center;
+  color: blueviolet;
 
+}
+.card_container a{
+  text-decoration: none;
+  color:white;
+  padding: 0px;
+  margin: 0px;
+}
+.card_container a:hover{
+  color: black;
+  text-decoration: none;
+}
+.btn{
+  border: none;
+  font-size: 16px;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover{
+  background-color: rgb(192, 129, 250);
+  color: black;
+}
 /*carousel*/
 .container h2{
     font-size: 36px;
+}
+.carousel-inner{
+  height: 400px;
+  padding: 10px;
 }
 .multi-item-carousel{
     .carousel-inner{
@@ -361,6 +418,7 @@ a{
     margin-top: 50px;
     margin-left: 100px;
   }
+
   .container .text{
     text-align: center;
     font-size: 41px;
@@ -484,6 +542,8 @@ a{
       width: 40%!important;
     }
   }
+
+  
 /*
 .Projects{
     display: flex;
@@ -593,38 +653,3 @@ a{
 }*/
 
 
-/*Projects css(Scrolling type)
-.Project_Container{
-    width: 1000px;
-}
-.Project_scroll{
-    display: grid;
-    grid-auto-flow: column;
-    scroll-behavior: auto;
-    gap: 1.2rem;
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-}
-.Projects_scroll::-webkit-scrollbar{
-    display: none;
-}
-.card{
-    scroll-snap-align: start;
-    border-radius: 30px;
-    min-height: 200px;
-    min-width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.card:nth-child(odd){
-    background:linear-gradient(-229deg,blueviolet,pink)
-}
-.card:nth-child(even){
-    background: linear-gradient(-229deg,pink,blueviolet);
-}*/
-
-  
- 
