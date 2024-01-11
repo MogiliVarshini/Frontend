@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -114,11 +116,19 @@ a{
     transform: scale(5);
     transition-property: margin-right; 
 }
+.getcv{
+  text-decoration: none;
+  color:blueviolet;
+}
+.getcv:hover{
+  color: white;
+  text-decoration: none;
+}
 .butns
 {
     display: flex;
     height: 100px;
-    width: 200px;
+    width: 260px;
     gap: 20px;
 }
 .butns button{
@@ -126,7 +136,7 @@ a{
     width: 50%;
     height: 50px;
     border: 4px solid blueviolet;
-    border-radius: 15px;
+    border-radius: 10px;
     color:blueviolet;
     font-size: 15px;
     font-weight: 500;
@@ -168,6 +178,22 @@ a{
     scroll-padding-top: 100px;
 }
 
+
+
+.light
+{
+    background-color:white;
+    color: black;
+}
+.dark
+{
+    background-color: black;
+    color: white;
+}
+
+
+
+/*About me*/
 #About_me{
     display: inline;
     height: 100%;
@@ -191,6 +217,13 @@ a{
     opacity: 0.75;
     font-size: 16px;
     margin-top: -30px;
+}
+#DownloadCV{
+  text-decoration: none;
+  color: white;
+}
+#DownloadCV:hover{
+  color: blueviolet;
 }
 .Button_CV{
     float: right;
@@ -217,7 +250,87 @@ a{
     color:blueviolet;
     
 }
+
+
+/*Skills CSS*/
+
+.Skillh2{
+  margin-top: 200px;
+  text-align: center;
+
+  color: blueviolet;
+
+}
+.skills{
+  margin-top: 0px;
+  margin: 50px 100px;
+  height: 70vh;
+    background-color:blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sec {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.parent-skill {
+  width: 200px;
+  height: auto;
+}
+
+.skill {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+ 
+ background: conic-gradient(blueviolet 85%, white 0deg);
+ 
+ background-color: conic-gradient(white 100%,blueviolet 0); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressive {
+  width: 97%;
+  height: 97%;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background: linear-gradient(280deg, blueviolet, #efefef);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressive-number {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
 /*Skills css*/
+/*
 #skills{
     margin-top: 300px;
     margin-left: 50px;
@@ -324,7 +437,26 @@ a{
 .Skill_Flex .skill_Settings::after{
     background: white;
     transform: rotate(calc(((blueviolet) - 0) * 0.01turn));
-}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*project css*/
 .container .project_head{
   text-align: center;
@@ -410,13 +542,13 @@ a{
 
 /*Contact Form css*/
 .container_contact{
-    max-width: 800px;
+    
     background: #fff;
-    width: 800px;
+    width: 105%;
     padding: 25px 40px 10px 40px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 0px;
   }
 
   .container .text{
@@ -544,112 +676,3 @@ a{
   }
 
   
-/*
-.Projects{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    
-}
-.slide_container{
-    max-width: 1500px;
-    width: 100%;
-    background-color: grey;
-    padding: 40px 0px;
-}
-.slide_content{
-    margin: 0 40px;  
-  
-}
-.card_wrapper{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.card{
-    width: 100%;
-    border-radius: 25px;
-    background-color:white;
-     
-    
-}
-.image_content,
-.card_content{
-    padding: 10px 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.image_content{
-    row-gap: 5px;
-    position: relative;
-    padding: 25px 0;
-
-}
-.overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: blueviolet;
-    border-radius: 25px 25px 0px 25px;
-}
-.overlay::before,.overlay::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color:blueviolet;
-}
-.overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color:#fff;
-}
-.card_image{
-    position: relative;
-    height: 140px;
-    width: 150px;
-    border-radius: 50%;
-    background: white;
-    padding: 3px;
-    
-
-}
-.card_image .card_img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid blueviolet;
-
-}
-.name{
-    font-size:18px ;
-    font-weight: 500;
-    color: #333;
-}
-.description{
-    font-size: 14px;
-    color:#707070;
-    text-align: center;
-}
-.btn{
-    border: none;
-    font-size: 16px;
-    color: white;
-    padding: 8px 16px;
-    background-color: blueviolet;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.btn:hover{
-    background-color: rgb(201, 149, 249);
-}*/
-
-

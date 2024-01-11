@@ -22,8 +22,9 @@
             <li><a href="#Projects">Projects</a></li>
             <li><a href="">Services</a></li>
             <li><a href="#Contact">Contact</a></li>
+            <li</li>
         </div>
-               
+        <button onclick="changeMode()">Switch mode</button> 
     </div>
     <main>
         <section id="home">
@@ -32,7 +33,7 @@
               <p class="Home_Role"><strong>WEB & PEGA DEVELOPER</strong></p>
               <div class="butns">
                 <button><strong>Hire me</strong></button>
-                <button><strong>Get CV</strong></button>
+                <button><a class="getcv" href="#DownloadCV"><strong>Get CV</strong></a></button>
               </div>
               </div>
               <div class="Home_right" style="z-index: 0px;">
@@ -50,42 +51,64 @@
                     INTRODUCE ABOUT <br>
                     MYSELF</p><br>
                 </strong>
-                <p class="About_me_desc">Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis iure enim aperiam eum, voluptate officia reprehenderit architecto doloremque culpa possimus error harum nihil vero quasi consectetur. Quam saepe fugiat aliquam quod dicta ab magnam quibusdam voluptas sed. Maxime temporibus pariatur officia quaerat voluptates similique reprehenderit minus. Commodi a corporis nesciunt cum. Unde non, quos iusto accusamus perferendis aliquam omnis, hic nobis eum ipsum officiis illo alias ut! Laborum provident, soluta voluptates iusto voluptate non quia nemo, fugiat officiis ut exercitationem, nesciunt ipsum cumque rem modi asperiores et minus. Cumque quibusdam harum expedita accusantium hic, illum fugiat nesciunt necessitatibus debitis.ipsum dolor sit amet, consectetur adipisicing elit. Nisi exercitationem amet dolor saepe autem ut nobis pariatur eum fugit esse!</p>
-                <button class="Button_CV">Download CV</button>
+                <p class="About_me_desc">
+                    As a Web and Pega developer, I bring a multifaceted skill set to the table. Proficient in front-end technologies like HTML, CSS, and JavaScript, I excel in creating visually appealing and responsive web interfaces. My expertise extends to Pega, where I leverage my knowledge of business process management to design and implement efficient workflow automation solutions. With a keen eye for detail, I ensure that user experiences are not only seamless but also align with the broader objectives of the application.
+                    <br><br>
+                    I thrive in collaborative environments, actively engaging with cross-functional teams to understand and translate business requirements into effective Pega applications. My problem-solving skills enable me to address complex challenges in both web development and Pega customization. Committed to staying abreast of the latest industry trends, I constantly seek opportunities for professional growth and aim to contribute innovative solutions to enhance the overall development process. Whether it's creating captivating web interfaces or optimizing business processes with Pega, I am dedicated to delivering high-quality, scalable solutions that meet and exceed expectations.</p>
+                <button class="Button_CV" ><a id="DownloadCV" href="./Documents/Mogili Venkata Varshini_Resume.pdf" target="_blank">Download CV</a></button>
             </div>
             
         </div>
+
+
+
+        <div class="myskills">
+           <h2  class="Skillh2">My Skills</h2>
         
-        <div id="skills">
-                <h2>My skills</h2>
-                <div class="Skill_Flex">
-                    <div class="Skill_Container">
-                        <div class="skill_Settings ">
-                            <h3>97<span>%</span></h3>
-                            <h4>PEGA</h4>
-                        </div>
+        <div class="skills">
+            
+        <section class="sec">
+
+            <div class="parent-skill">
+                <div class="skill">
+                    <div class="progressive" data-progressive="97">
+                        <span class="progressive-number">0%</span>
                     </div>
-                    <div class="Skill_Container">
-                        <div class="skill_Settings ">
-                            <h3>88<span>%</span></h3>
-                            <h4>HTML</h4>
-                        </div>
-                    </div>
-                    <div class="Skill_Container">
-                        <div class="skill_Settings ">
-                            <h3>80<span>%</span></h3>
-                            <h4>CSS</h4>
-                        </div> 
-                    </div>
-                    <div class="Skill_Container">
-                        <div class="skill_Settings ">
-                            <h3>65<span>%</span></h3>
-                            <h4>Java</h4>
-                        </div>
-                    </div>
-                                   
                 </div>
-        </div>   
+                <span class="title">PEGA</span>
+            </div>
+    
+            <div class="parent-skill">
+                <div class="skill">
+                    <div class="progressive" data-progressive="93">
+                        <span class="progressive-number">0%</span>
+                    </div>
+                </div>
+                <span class="title">HTML</span>
+            </div>
+    
+            <div class="parent-skill">
+                <div class="skill">
+                    <div class="progressive" data-progressive="85">
+                        <span class="progressive-number">0%</span>
+                    </div>
+                </div>
+                <span class="title">CSS</span>
+            </div>
+
+            <div class="parent-skill">
+                <div class="skill">
+                    <div class="progressive" data-progressive="70">
+                        <span class="progressive-number">0%</span>
+                    </div>
+                </div>
+                <span class="title">Javascript</span>
+            </div>
+    
+        </section>
+
+    </div>
+</div>
         
         <div id="Projects" class="container">
             <h2 class="project_head">Projects</h2>
